@@ -4,7 +4,6 @@ WORKDIR /app
 # copy csproj and restore as distinct layers
 #COPY *.sln .
 COPY dotnetcore-api/*.csproj ./dotnetcore-api/
-RUN ls -la
 WORKDIR /app/dotnetcore-api
 RUN dotnet restore
 
